@@ -3,7 +3,7 @@
 import * as pkg from '@iobroker/adapter-core'; // Get common adapter utils
 import { ioBLib } from '@strathcole/iob-lib';
 import { myQApi } from "@hjdhjd/myq";
-import packageJSON from './package.json' assert { type: 'json' };
+import packageJSON from './package.json' with { type: 'json' };
 
 let MyQ;
 const { Adapter } = pkg.default;
